@@ -1,7 +1,7 @@
 require 'adafruit/io'
 reqyire 'json'
 
-Read JSON from a file, iterate over objects
+#Read JSON from a file, iterate over objects
 file = open("settings.json")
 json_file = file.read
 
