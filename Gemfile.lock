@@ -27,6 +27,7 @@ GEM
 
 PLATFORMS
   arm-linux
+  universal-darwin-20
 
 DEPENDENCIES
   adafruit-io
