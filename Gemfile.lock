@@ -1,0 +1,35 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activesupport (4.2.11.3)
+      i18n (~> 0.7)
+      minitest (~> 5.1)
+      thread_safe (~> 0.3, >= 0.3.4)
+      tzinfo (~> 1.1)
+    adafruit-io (2.0.0)
+      activesupport (~> 4.2)
+      faraday (~> 0.8)
+      faraday_middleware (~> 0.9)
+      mqtt (~> 0.4)
+    concurrent-ruby (1.1.8)
+    faraday (0.17.4)
+      multipart-post (>= 1.2, < 3)
+    faraday_middleware (0.14.0)
+      faraday (>= 0.7.4, < 1.0)
+    i18n (0.9.5)
+      concurrent-ruby (~> 1.0)
+    minitest (5.14.4)
+    mqtt (0.5.0)
+    multipart-post (2.1.1)
+    thread_safe (0.3.6)
+    tzinfo (1.2.9)
+      thread_safe (~> 0.1)
+
+PLATFORMS
+  arm-linux
+
+DEPENDENCIES
+  adafruit-io
+
+BUNDLED WITH
+   2.2.15
