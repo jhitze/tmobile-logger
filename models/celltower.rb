@@ -1,5 +1,3 @@
-require 'pry'
-
 class CellTower
   def initialize(aio, data_item_name, data_item_index)
     @aio = aio
@@ -55,8 +53,13 @@ class CellTower
     @cell_id = data[@data_item_name][@data_item_index]["stat"]["PhysicalCellID"]
   end
 
-  def update_adafruit_from_data()
-
+  def update_adafruit()
+    @aio.send_data @snr_feed, @snr
+    @aio.send_data @rsrp_feed, @rsrp
+    @aio.send_data @rsrq_feed, @rsrq
+    @aio.send_data @cell_id_feed, @cell_id
+  rescue => ex
+    puts "Error updating Adafruit :( (#{ex.response&.status})"
   end
 
   def to_s
