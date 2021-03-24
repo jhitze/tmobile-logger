@@ -1,0 +1,15 @@
+[Unit]
+Description=TMobileLogger
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/ruby tmobile-logger.rb
+WorkingDirectory=/home/pi/tmobile-logger
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
+
